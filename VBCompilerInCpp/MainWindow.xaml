@@ -1,0 +1,27 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="677.5" Width="685">
+    <Grid Height="648.5" VerticalAlignment="Top">
+        <RichTextBox x:Name="codeRTB" HorizontalAlignment="Left" Height="220" Margin="42,38,0,0" VerticalAlignment="Top" Width="456">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Add" x:Name="addBtn" HorizontalAlignment="Left" Margin="512,55,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox HorizontalAlignment="Left" x:Name="errorsListBox" Height="78" Margin="42,294,0,0" VerticalAlignment="Top" Width="456"/>
+        <Label Content="Errors:" HorizontalAlignment="Left" Margin="42,268.04,0,0" VerticalAlignment="Top"/>
+        <ListBox  x:Name="methodsListBox" HorizontalAlignment="Left" Height="78" Margin="42,424.167,0,0" VerticalAlignment="Top" Width="456"/>
+        <Label Content="Methods:" HorizontalAlignment="Left" Margin="42,393.207,0,0" VerticalAlignment="Top"/>
+        <ListBox   x:Name="variablesListBox" Height="78" Margin="42,557,179,0" VerticalAlignment="Top" Width="456"/>
+        <Label Content="variables:" HorizontalAlignment="Left" Margin="42,525.707,0,0" VerticalAlignment="Top"/>
+        <Button Content="Invoke" x:Name="invokeBtn"  HorizontalAlignment="Left" Margin="545,480.207,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Set" x:Name="setBtn" HorizontalAlignment="Left" Margin="545,612.707,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="559,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="invokeTB" HorizontalAlignment="Left" Height="23" Margin="545,452.207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="setTB" HorizontalAlignment="Left" Height="23" Margin="545,584.707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
